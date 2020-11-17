@@ -9,18 +9,24 @@ import UIKit
 
 class TableViewCell: UITableViewCell {
     @IBOutlet var ImageView: UIImageView!
+    
+    @IBAction func addBorder(_ sender: Any?) {
+        ImageView.layer.borderColor = UIColor(red: 0.5, green: 0.5, blue: 0.5, alpha: 1.0).cgColor
+        ImageView.layer.masksToBounds = true
+        ImageView.contentMode = .scaleToFill
+        ImageView.layer.borderWidth = 3
+    }
 }
 
 class ViewController: UITableViewController {
-    //let flags = [("Laravel"),("Swift"),("Apple"),("Window"),("Android")]
-    //let flags = [UIImage(named: "Laravel"), UIImage(named: "swift"), UIImage(named: "Laravel"), UIImage(named: "window"), UIImage(named: "Android")]
-    //var pictures = [String]()
-    //var pictures: [UIImage] = [spain@2x.png];
-    
-    let pictures = [UIImage(named: "spain@3x")]
+    let pictures = [UIImage(named: "spain@3x"), UIImage(named: "nigeria@3x"), UIImage(named: "italy@3x"), UIImage(named: "ireland@3x"), UIImage(named: "germany@3x"), UIImage(named: "poland@3x"), UIImage(named: "russia@3x"), UIImage(named: "estonia@3x"), UIImage(named: "uk@3x"), UIImage(named: "us@3x"), UIImage(named: "monaco@3x"), UIImage(named: "france@3x")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationItem.title = "World Flags"
+        navigationController?.navigationBar.prefersLargeTitles = true
+        
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -29,10 +35,10 @@ class ViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Picture", for: indexPath) as! TableViewCell
+        cell.addBorder(nil)
         cell.ImageView?.image = pictures[indexPath .row]
         return cell
     }
-        // Do any additional setup after loading the view.
 }
 
 
