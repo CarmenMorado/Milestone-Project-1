@@ -37,6 +37,7 @@
 		733C49FA25620208008EFD66 /* france@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 733C49E125620208008EFD66 /* france@2x.png */; };
 		733C49FB25620208008EFD66 /* us@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 733C49E225620208008EFD66 /* us@2x.png */; };
 		733C49FC25620208008EFD66 /* uk@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 733C49E325620208008EFD66 /* uk@2x.png */; };
+		73F71C7425659F99000FE0DD /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F71C7325659F99000FE0DD /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		733C49E125620208008EFD66 /* france@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "france@2x.png"; sourceTree = "<group>"; };
 		733C49E225620208008EFD66 /* us@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "us@2x.png"; sourceTree = "<group>"; };
 		733C49E325620208008EFD66 /* uk@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uk@2x.png"; sourceTree = "<group>"; };
+		73F71C7325659F99000FE0DD /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				733C49B52561E6B7008EFD66 /* AppDelegate.swift */,
 				733C49B72561E6B7008EFD66 /* SceneDelegate.swift */,
 				733C49B92561E6B7008EFD66 /* ViewController.swift */,
+				73F71C7325659F99000FE0DD /* DetailViewController.swift */,
 				733C49BB2561E6B7008EFD66 /* Main.storyboard */,
 				733C49BE2561E6C5008EFD66 /* Assets.xcassets */,
 				733C49C02561E6C5008EFD66 /* LaunchScreen.storyboard */,
@@ -244,6 +247,7 @@
 				733C49BA2561E6B7008EFD66 /* ViewController.swift in Sources */,
 				733C49B62561E6B7008EFD66 /* AppDelegate.swift in Sources */,
 				733C49B82561E6B7008EFD66 /* SceneDelegate.swift in Sources */,
+				73F71C7425659F99000FE0DD /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
