@@ -16,8 +16,8 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         
         if let imageToLoad = selectedImage {
-            //addBorder(nil)
             flagView.image = imageToLoad
+            addBorder(nil)
         }
         
         let names = ["spain@3x", "nigeria@3x", "italy@3x", "ireland@3x", "germany@3x","poland@3x", "russia@3x", "estonia@3x", "uk@3x", "us@3x", "monaco@3x", "france@3x"]
@@ -27,6 +27,13 @@ class DetailViewController: UIViewController {
                 imageName = name
             }
         }
+        
+//      if imageName!.count == 5 {
+//          title = "\(imageName!.uppercased().dropLast(3))"
+//      } else {
+//          title = "\(imageName!.prefix(1).capitalized.dropLast(3))"
+//           imageName = imageName!.prefix(1).capitalized
+//      }
         
         title = "\(imageName!.uppercased().dropLast(3))"
         
@@ -39,6 +46,7 @@ class DetailViewController: UIViewController {
     @IBAction func addBorder(_ sender: Any?) {
         flagView.layer.borderColor = UIColor(red: 0.5, green: 0.5, blue: 0.5, alpha: 1.0).cgColor
         flagView.layer.masksToBounds = true
+        flagView.contentMode = .scaleToFill
         flagView.layer.borderWidth = 3
     }
     

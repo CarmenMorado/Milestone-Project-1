@@ -62,33 +62,28 @@
             <point key="canvasLocation" x="1778.2608695652175" y="101.78571428571428"/>
         </scene>
         <!--Detail View Controller-->
-        <scene sceneID="kgR-NV-jto">
+        <scene sceneID="NhM-jL-Oxw">
             <objects>
-                <viewController storyboardIdentifier="Detail" id="zQA-BJ-qgi" customClass="DetailViewController" customModule="Milestone_Project_1" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="1Pj-CA-d97">
+                <viewController storyboardIdentifier="Detail" id="UUe-UC-ucN" customClass="DetailViewController" customModule="Milestone_Project_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GU7-Rl-1Ch">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HaF-Sj-rO2">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I4g-Bc-oZ1">
+                                <rect key="frame" x="0.0" y="328" width="430" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="2aw-kb-baD"/>
+                        <viewLayoutGuide key="safeArea" id="j2h-wL-N2i"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="HaF-Sj-rO2" firstAttribute="centerY" secondItem="1Pj-CA-d97" secondAttribute="centerY" id="5Ga-WJ-QfK"/>
-                            <constraint firstItem="HaF-Sj-rO2" firstAttribute="leading" secondItem="2aw-kb-baD" secondAttribute="leading" id="Vl7-5x-ue6"/>
-                            <constraint firstItem="HaF-Sj-rO2" firstAttribute="centerX" secondItem="1Pj-CA-d97" secondAttribute="centerX" id="fcI-xz-h5W"/>
-                            <constraint firstItem="HaF-Sj-rO2" firstAttribute="top" secondItem="1Pj-CA-d97" secondAttribute="topMargin" constant="-44" id="yFz-bb-GDl"/>
-                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="flagView" destination="HaF-Sj-rO2" id="TKe-oN-Wq9"/>
+                        <outlet property="flagView" destination="I4g-Bc-oZ1" id="Pj5-ZR-HwN"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nca-8j-ms4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qwr-ya-x9L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2698.5507246376815" y="101.78571428571428"/>
+            <point key="canvasLocation" x="2571.0144927536235" y="114.50892857142857"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="TzZ-JR-qzV">
