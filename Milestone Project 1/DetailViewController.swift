@@ -28,14 +28,15 @@ class DetailViewController: UIViewController {
             }
         }
         
-//      if imageName!.count == 5 {
-//          title = "\(imageName!.uppercased().dropLast(3))"
-//      } else {
-//          title = "\(imageName!.prefix(1).capitalized.dropLast(3))"
-//           imageName = imageName!.prefix(1).capitalized
-//      }
+        if imageName!.count == 5 {
+            title = "\(imageName!.uppercased().dropLast(3))"
+            imageName = "\(imageName!.uppercased().dropLast(3))"
+        }
         
-        title = "\(imageName!.uppercased().dropLast(3))"
+        else {
+            title = "\(imageName!.capitalized.dropLast(3))"
+            imageName = "\(imageName!.capitalized.dropLast(3))"
+        }
         
         navigationItem.largeTitleDisplayMode = .never
         
@@ -66,7 +67,7 @@ class DetailViewController: UIViewController {
             return
         }
 
-        let vc = UIActivityViewController(activityItems: [image, selectedImage!], applicationActivities: [])
+        let vc = UIActivityViewController(activityItems: [image, imageName!], applicationActivities: [])
         vc.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem
         present(vc, animated: true)
         
